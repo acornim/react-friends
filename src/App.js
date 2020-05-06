@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import axios from 'axios'
 import Moive from "./components/Movie"
-
+import "./App.css"
 class App extends React.Component {
   state = {
     isLoading: true,
@@ -26,20 +26,27 @@ class App extends React.Component {
   }
   render() {
     const { isLoading, movies } = this.state;
-    return <div>
-      <h4>{isLoading ? "Loading..." : movies.map(movie => {
-        console.log(movie)
-        return <Moive 
+    return (<section className="container">
+      {isLoading ? (
+      <div className="loader">
+        <span className="loader__text">Loading...</span>
+
+        </div>) : (<div className="movies">
+        {movies.map(movie => (
+        // console.log(movie)
+        <Moive 
           key={movie.id} 
           id={movie.id} 
           year={movie.year} 
           title={movie.title} 
           summary={movie.summary} 
-          poster={movie.medium_cover_image} />
-      })}
-      </h4>
-      
-    </div>
+          poster={movie.medium_cover_image}
+          trailer={movie.yt_trailer_code}
+          genres={movie.genres} />
+      ))}
+        </div>)}
+    </section>
+    )
   }
 }
 
