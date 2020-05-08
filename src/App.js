@@ -1,53 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import axios from 'axios'
-import Moive from "./components/Movie"
-import "./App.css"
-class App extends React.Component {
-  state = {
-    isLoading: true,
-    movies: []
+import Friend from "./components/Friend"
+import React from 'react'
+import frinedsData from './data'
+class App extends React.Component{
+  state={
+    friends:[],
+    isLoading:"true"
   }
-  getMovies = async () => {
-    const {
-       data: { 
-         data: { movies } 
-        } 
-      } = await axios.get("https://yts-proxy.now.sh/list_movies.json?sort_by=rating")
-    console.log(movies) // movies.data.data.movies -> es6
-    this.setState({movies, isLoading:false}) // movies (from state) : movies (from axios)
-
+  componentDidMount(){
+     setTimeout(() => {
+      this.setState({ isLoading: false });
+      }, 6000);
+      const friends = frinedsData.info
+      this.setState({friends, isLoading:false})
   }
-  componentDidMount() {
-    this.getMovies()
-    // setTimeout(() => {
-    //   this.setState({ isLoading: false });
-    //   }, 6000);
-  }
-  render() {
-    const { isLoading, movies } = this.state;
-    return (<section className="container">
-      {isLoading ? (
-      <div className="loader">
-        <span className="loader__text">Loading...</span>
-
-        </div>) : (<div className="movies">
-        {movies.map(movie => (
-        // console.log(movie)
-        <Moive 
-          key={movie.id} 
-          id={movie.id} 
-          year={movie.year} 
-          title={movie.title} 
-          summary={movie.summary} 
-          poster={movie.medium_cover_image}
-          trailer={movie.yt_trailer_code}
-          genres={movie.genres} />
-      ))}
-        </div>)}
-    </section>
-    )
+  render(){
+    const {isLoading, friends} = this.state
+    console.log(friends)
+    return(
+      <div>
+      {isLoading ? "loading" : friends.map(friend =>
+      <Friend 
+        key={friend.id}
+        season={friend.season}
+        episode={friend.episode}
+        quote={friend.quote}
+        character={friend.character}
+        yt_code={friend.yt_code}
+        url={friend.url}
+        />
+      
+      )}
+      </div>
+  )
   }
 }
-
-export default App;
+export default App

@@ -1,0 +1,54 @@
+{
+    "info": [
+        {
+            "id" : 1,
+            "season" : 10,
+            "episode" : "The One with the Birth Mother",
+            "quote": "Joey doesn't share food!",
+            "character":"Joey",
+            "yt_code":"96DDkJMZd-Q",
+            "url":"https://www.youtube.com/watch?v=96DDkJMZd-Q"
+
+        },
+        {
+            "id" : 2,
+            "season" : 7,
+            "episode":"The One Where Chandler Doesn't Like Dogs",
+            "quote": "It's a moo point. It's like a cow's opinion; it doesn't matter. It's moo.",
+            "character":"Joey",
+            "yt_code": "62necDwQb5E",
+            "url":"https://www.youtube.com/watch?v=62necDwQb5E"
+
+        },
+        {
+            "id" : 4,
+            "season" : 6,
+            "episode":"The One with Unagi",
+            "quote": "Unagi.",
+            "character": "Ross",
+            "yt_code:":"Mkq8pnvsnQg",
+            "url":"https://www.youtube.com/watch?v=jbRVoTL5djs"
+
+        },
+        {            
+            "id" : 5,
+            "season" : 6,
+            "episode":"Joey is making pancakes",
+            "quote": "Joey is making pancakes",
+            "character": "Joey",
+            "yt_code:":"EiGf4Q65zjQ",
+            "url":"https://www.youtube.com/watch?v=EiGf4Q65zjQ"
+
+        },
+        {
+            "id" : 3,
+            "season" : 10,
+            "episode":"The One Where Joey Speaks French",
+            "quote": "Je de coup, plau.",
+            "character":"Joey",
+            "yt_code:":"gElv9YMdWl4",
+            "url":"https://www.youtube.com/watch?v=gElv9YMdWl4"
+        }
+        
+    ]
+}
