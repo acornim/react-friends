@@ -1,22 +1,24 @@
 import Friend from "./components/Friend"
 import React from 'react'
 import frinedsData from './data'
+import './scss/App.scss'
 class App extends React.Component{
   state={
     friends:[],
-    isLoading:"true"
+    isLoading:false
   }
   componentDidMount(){
      setTimeout(() => {
       this.setState({ isLoading: false });
-      }, 6000);
+      }, 3000);
       const friends = frinedsData.info
-      this.setState({friends, isLoading:false})
+      this.setState({friends})
   }
   render(){
     const {isLoading, friends} = this.state
     console.log(friends)
     return(
+      
       <div>
       {isLoading ? "loading" : friends.map(friend =>
       <Friend 
@@ -31,6 +33,7 @@ class App extends React.Component{
       
       )}
       </div>
+   
   )
   }
 }
