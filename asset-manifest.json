@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-friends/static/css/main.e690b3b9.chunk.css",
+    "main.js": "/react-friends/static/js/main.f8ea9842.chunk.js",
+    "main.js.map": "/react-friends/static/js/main.f8ea9842.chunk.js.map",
+    "runtime-main.js": "/react-friends/static/js/runtime-main.6b556392.js",
+    "runtime-main.js.map": "/react-friends/static/js/runtime-main.6b556392.js.map",
+    "static/js/2.07fb69c5.chunk.js": "/react-friends/static/js/2.07fb69c5.chunk.js",
+    "static/js/2.07fb69c5.chunk.js.map": "/react-friends/static/js/2.07fb69c5.chunk.js.map",
+    "index.html": "/react-friends/index.html",
+    "precache-manifest.6871ad0dd28fe5546e2d2b1c83aa5492.js": "/react-friends/precache-manifest.6871ad0dd28fe5546e2d2b1c83aa5492.js",
+    "service-worker.js": "/react-friends/service-worker.js",
+    "static/css/main.e690b3b9.chunk.css.map": "/react-friends/static/css/main.e690b3b9.chunk.css.map",
+    "static/js/2.07fb69c5.chunk.js.LICENSE.txt": "/react-friends/static/js/2.07fb69c5.chunk.js.LICENSE.txt",
+    "static/media/poster.png": "/react-friends/static/media/poster.8f01d791.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b556392.js",
+    "static/js/2.07fb69c5.chunk.js",
+    "static/css/main.e690b3b9.chunk.css",
+    "static/js/main.f8ea9842.chunk.js"
+  ]
+}
